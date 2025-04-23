@@ -6,19 +6,34 @@
     android:layout_height="match_parent"
     android:background="#FAFAFA">
 
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_margin="16dp"
+        android:layout_alignParentStart="true"/>
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerViewNotes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_above="@id/fabAddNote"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
         android:padding="16dp"
-        android:layout_alignParentTop="true"/>
+        android:contentDescription="Notes" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fabAddNote"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@android:drawable/ic_input_add"
-        android:contentDescription="Pridėti užrašą"
+        android:contentDescription="Add note"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_margin="16dp"
