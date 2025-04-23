@@ -39,7 +39,7 @@ public class AddNoteActivity extends AppCompatActivity {
                 NoteStorage.saveNotes(AddNoteActivity.this, notes);
 
                 setResult(RESULT_OK);
-                finish(); // Grįžtam į MainActivity
+                finish();
             }
         });
     }
