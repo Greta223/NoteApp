@@ -30,7 +30,7 @@ public class AddNoteActivity extends AppCompatActivity {
                 String content = editTextContent.getText().toString().trim();
 
                 if (name.isEmpty() || content.isEmpty()) {
-                    Toast.makeText(AddNoteActivity.this, "Užpildyk abu laukus", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AddNoteActivity.this, "Both fields are required", Toast.LENGTH_SHORT).show();
                     return;
                 }
 
